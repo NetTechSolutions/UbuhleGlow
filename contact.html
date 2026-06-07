@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Ubuhle Skin Glow</title>
+<meta name="description" content="Reach the Ubuhle Skin Glow concierge team for skin consultations, press inquiries, wholesale, or general questions."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#121414",
+          "primary-container": "#c5a059",
+          "secondary": "#c9c6c5",
+          "outline": "#9a8f80",
+          "outline-variant": "#4e4639",
+          "surface-container": "#1e2020",
+          "surface-container-low": "#1a1c1c",
+          "surface-container-high": "#282a2b",
+          "surface-container-highest": "#333535",
+          "surface-container-lowest": "#0d0e0f",
+          "on-surface": "#e2e2e2",
+          "on-surface-variant": "#d1c5b4",
+          "on-primary": "#412d00",
+          "on-primary-fixed": "#261900",
+          "primary": "#e9c176",
+          "primary-fixed-dim": "#e9c176",
+          "secondary-container": "#4a4949",
+          "surface": "#121414"
+        },
+        "fontFamily": {
+          "body-lg": ["Manrope"],
+          "headline-md": ["Noto Serif"],
+          "label-sm": ["Manrope"],
+          "label-lg": ["Manrope"],
+          "headline-xl": ["Noto Serif"],
+          "body-md": ["Manrope"],
+          "headline-lg": ["Noto Serif"]
+        },
+        "fontSize": {
+          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "500"}],
+          "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500"}],
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+          "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  }
+  body { background-color: #121414; color: #e2e2e2; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: #121414; }
+  ::-webkit-scrollbar-thumb { background: #c5a059; }
+
+  /* Form field focus line */
+  .field-line {
+    position: relative;
+  }
+  .field-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 0; height: 1px;
+    background: #e9c176;
+    transition: width 0.35s ease;
+  }
+  .field-line:focus-within::after { width: 100%; }
+
+  /* Scroll reveal */
+  [data-aos="fade-up"]{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  [data-aos="fade-up"].revealed{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){[data-aos="fade-up"]{opacity:1;transform:none;transition:none}}
+
+  /* Select arrow */
+  select option { background:#121414; color:#e2e2e2; }
+</style>
+</head>
+<body class="font-body-md antialiased overflow-x-hidden">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full flex justify-between items-center px-6 md:px-12 h-24 bg-black z-50 border-b border-[#C5A059]/20">
+  <a href="index.html" class="flex items-center flex-shrink-0">
+    <img src="logo/logo-removebg-preview.png" alt="Ubuhle Skin Glow" class="h-14 w-auto" loading="eager" decoding="async" width="224" height="56">
+  </a>
+  <div class="hidden md:flex items-center gap-10 font-serif text-sm tracking-widest uppercase">
+    <a class="text-zinc-400 hover:text-[#C5A059] transition-colors duration-300" href="shop.html">Shop</a>
+    <a class="text-zinc-400 hover:text-[#C5A059] transition-colors duration-300" href="about us.html">About</a>
+    <a class="text-zinc-400 hover:text-[#C5A059] transition-colors duration-300" href="results.html">Results</a>
+    <a class="text-[#C5A059] border-b border-[#C5A059] pb-1" href="contact.html">Contact</a>
+  </div>
+  <div class="flex items-center gap-5 text-[#C5A059]">
+    <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">shopping_bag</span>
+    <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">person</span>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="relative pt-44 pb-24 text-center px-6 overflow-hidden">
+  <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-background opacity-90 pointer-events-none"></div>
+  <div class="relative z-10 max-w-2xl mx-auto" data-aos="fade-up">
+    <span class="font-label-sm text-primary uppercase tracking-[0.3em] mb-6 block">We'd Love To Hear From You</span>
+    <h1 data-aos="fade-up" class="font-headline-xl text-on-surface mb-6">Get In Touch</h1>
+    <p data-aos="fade-up" class="font-body-lg text-zinc-400 mb-0 max-w-lg mx-auto">Whether it's a skin concern, a press inquiry, or simply a question about our rituals — our concierge team is here.</p>
+  </div>
+  <div class="relative z-10 mt-12 w-12 h-px bg-primary mx-auto" data-aos="fade-up"></div>
+</header>
+
+<!-- Main Contact Grid -->
+<main class="max-w-6xl mx-auto px-6 md:px-12 pb-32">
+  <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+
+    <!-- Left: Contact Details -->
+    <div class="lg:col-span-2 space-y-12">
+
+      <div data-aos="fade-up">
+        <h2 class="font-headline-lg text-on-surface mb-10">Contact Details</h2>
+        <div class="space-y-8">
+
+          <div class="flex gap-5 items-start group">
+            <div class="w-10 h-10 border border-[#C5A059]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#C5A059]/70 transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary text-[18px]">mail</span>
+            </div>
+            <div>
+              <p class="font-label-sm text-zinc-500 uppercase tracking-widest mb-1">Email</p>
+              <a href="mailto:concierge@ubuhleskin.com" class="font-body-md text-on-surface hover:text-primary transition-colors duration-300">concierge@ubuhleskin.com</a>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start group">
+            <div class="w-10 h-10 border border-[#C5A059]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#C5A059]/70 transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary text-[18px]">call</span>
+            </div>
+            <div>
+              <p class="font-label-sm text-zinc-500 uppercase tracking-widest mb-1">Phone</p>
+              <p data-aos="fade-up" class="font-body-md text-on-surface">+1 (800) UBUHLE-1</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start group">
+            <div class="w-10 h-10 border border-[#C5A059]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#C5A059]/70 transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary text-[18px]">schedule</span>
+            </div>
+            <div>
+              <p class="font-label-sm text-zinc-500 uppercase tracking-widest mb-1">Concierge Hours</p>
+              <p data-aos="fade-up" class="font-body-md text-on-surface">Mon – Fri, 9 AM – 6 PM EST</p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 items-start group">
+            <div class="w-10 h-10 border border-[#C5A059]/30 flex items-center justify-center flex-shrink-0 group-hover:border-[#C5A059]/70 transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary text-[18px]">location_on</span>
+            </div>
+            <div>
+              <p class="font-label-sm text-zinc-500 uppercase tracking-widest mb-1">Studio</p>
+              <p data-aos="fade-up" class="font-body-md text-on-surface">Johannesburg, South Africa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Philosophy pull quote -->
+      <div class="border-l-2 border-[#C5A059]/40 pl-6 py-2" data-aos="fade-up" style="transition-delay:0.15s">
+        <p class="font-headline-md text-on-surface italic leading-relaxed">"Skin is the canvas on which your vitality is written."</p>
+        <span class="font-label-sm text-primary uppercase tracking-widest mt-4 block">— Ubuhle Skin Glow</span>
+      </div>
+
+    </div>
+
+    <!-- Right: Contact Form -->
+    <div class="lg:col-span-3 bg-surface-container border border-[#C5A059]/10 p-10 md:p-14" data-aos="fade-up" style="transition-delay:0.1s">
+
+      <h2 class="font-headline-lg text-on-surface mb-10">Send a Message</h2>
+
+      <form id="contact-form" class="space-y-10" novalidate>
+
+        <!-- Name Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div class="field-line border-b border-zinc-800 pb-3">
+            <label class="font-label-sm text-zinc-500 uppercase tracking-[0.15em] block mb-2" for="first-name">First Name <span class="text-primary">*</span></label>
+            <input id="first-name" name="first-name" type="text" required autocomplete="given-name"
+              class="w-full bg-transparent text-on-surface font-body-md focus:outline-none placeholder-zinc-700 border-0 p-0"
+              placeholder="Amara">
+          </div>
+          <div class="field-line border-b border-zinc-800 pb-3">
+            <label class="font-label-sm text-zinc-500 uppercase tracking-[0.15em] block mb-2" for="last-name">Last Name <span class="text-primary">*</span></label>
+            <input id="last-name" name="last-name" type="text" required autocomplete="family-name"
+              class="w-full bg-transparent text-on-surface font-body-md focus:outline-none placeholder-zinc-700 border-0 p-0"
+              placeholder="Dlamini">
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="field-line border-b border-zinc-800 pb-3">
+          <label class="font-label-sm text-zinc-500 uppercase tracking-[0.15em] block mb-2" for="email">Email Address <span class="text-primary">*</span></label>
+          <input id="email" name="email" type="email" required autocomplete="email"
+            class="w-full bg-transparent text-on-surface font-body-md focus:outline-none placeholder-zinc-700 border-0 p-0"
+            placeholder="your@email.com">
+        </div>
+
+        <!-- Subject -->
+        <div class="field-line border-b border-zinc-800 pb-3">
+          <label class="font-label-sm text-zinc-500 uppercase tracking-[0.15em] block mb-2" for="subject">Topic</label>
+          <div class="relative">
+            <select id="subject" name="subject"
+              class="w-full bg-transparent text-on-surface font-body-md focus:outline-none border-0 p-0 appearance-none cursor-pointer pr-8">
+              <option value="" disabled selected>Select a topic</option>
+              <option value="skin">Skin Consultation</option>
+              <option value="order">Order & Shipping</option>
+              <option value="press">Press & Partnerships</option>
+              <option value="wholesale">Wholesale Inquiry</option>
+              <option value="returns">Returns & Exchanges</option>
+              <option value="general">General Question</option>
+            </select>
+            <span class="material-symbols-outlined text-zinc-500 absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-[18px]">expand_more</span>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="field-line border-b border-zinc-800 pb-3">
+          <label class="font-label-sm text-zinc-500 uppercase tracking-[0.15em] block mb-2" for="message">Message <span class="text-primary">*</span></label>
+          <textarea id="message" name="message" required rows="5"
+            class="w-full bg-transparent text-on-surface font-body-md focus:outline-none placeholder-zinc-700 border-0 p-0 resize-none"
+            placeholder="Tell us how we can help…"></textarea>
+        </div>
+
+        <!-- Submit -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-2">
+          <button type="submit" id="submit-btn"
+            class="font-label-lg uppercase tracking-widest bg-primary text-on-primary-fixed px-12 py-4 hover:brightness-110 transition-[filter] duration-300 flex items-center gap-3">
+            Send Message
+            <span class="material-symbols-outlined text-[18px]" id="submit-icon">arrow_forward</span>
+          </button>
+          <p class="font-label-sm text-zinc-600 uppercase tracking-widest">We respond within 24 hours</p>
+        </div>
+
+        <!-- Success / Error message -->
+        <div id="form-feedback" class="hidden font-body-md py-4 px-6 border" role="alert"></div>
+
+      </form>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-20 px-6 md:px-12 flex flex-col md:flex-row justify-between items-start gap-8 bg-zinc-950 border-t border-zinc-900">
+  <div class="max-w-xs">
+    <div class="text-[#C5A059] font-serif text-lg tracking-widest mb-4">UBUHLE SKIN GLOW</div>
+    <p class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 mb-6">Redefining the standard of luxury skincare through scientific excellence and organic purity.</p>
+    <div class="flex gap-4 text-zinc-400">
+      <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">public</span>
+      <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">share</span>
+      <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
+    </div>
+  </div>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+    <div class="space-y-4">
+      <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Navigate</span>
+      <ul class="space-y-3 font-sans text-[10px] tracking-widest uppercase">
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="shop.html">Shop All</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="about us.html">About Us</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="results.html">Results</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="space-y-4">
+      <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Support</span>
+      <ul class="space-y-3 font-sans text-[10px] tracking-widest uppercase">
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+        <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="hidden md:block space-y-4">
+      <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Contact</span>
+      <ul class="space-y-3 font-sans text-[10px] tracking-widest uppercase">
+        <li class="text-zinc-500">concierge@ubuhleskin.com</li>
+        <li class="text-zinc-500">+1 (800) UBUHLE-1</li>
+      </ul>
+    </div>
+  </div>
+  <div class="w-full md:w-auto self-end text-right">
+    <div class="font-sans text-[10px] tracking-widest uppercase text-zinc-500">
+      &copy; 2024 Ubuhle Skin Glow. All Rights Reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+(function(){
+
+  /* Lightweight form handling */
+  var form = document.getElementById('contact-form');
+  var btn  = document.getElementById('submit-btn');
+  var icon = document.getElementById('submit-icon');
+  var fb   = document.getElementById('form-feedback');
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    /* Basic validation */
+    var req = form.querySelectorAll('[required]');
+    var valid = true;
+    req.forEach(function(f){ if(!f.value.trim()){ f.style.borderColor='#ffb4ab'; valid=false; } else { f.style.borderColor=''; }});
+    if(!valid){ showFeedback('Please fill in all required fields.','error'); return; }
+
+    /* Simulate send */
+    btn.disabled = true;
+    icon.textContent = 'hourglass_empty';
+    btn.classList.add('opacity-70');
+
+    setTimeout(function(){
+      showFeedback('Thank you! Your message has been received. We\'ll be in touch within 24 hours.','success');
+      form.reset();
+      btn.disabled = false;
+      icon.textContent = 'check_circle';
+      btn.classList.remove('opacity-70');
+      setTimeout(function(){ icon.textContent = 'arrow_forward'; }, 3000);
+    }, 1200);
+  });
+
+  function showFeedback(msg, type){
+    fb.textContent = msg;
+    fb.className = 'font-body-md py-4 px-6 border text-sm';
+    if(type === 'success'){
+      fb.classList.add('border-primary/30','text-primary','bg-primary/5');
+    } else {
+      fb.classList.add('border-red-500/30','text-red-400','bg-red-500/5');
+    }
+    fb.classList.remove('hidden');
+    fb.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+})();
+</script>
+</body>
+</html>

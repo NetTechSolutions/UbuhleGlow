@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description"
+    content="Ubuhle Skin Glow — luxury skincare rooted in African botanicals and clinical science. Discover radiance that lasts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:wght@400;500&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "background": "#121414",
+            "on-primary-fixed": "#261900",
+            "secondary": "#c9c6c5",
+            "primary-container": "#c5a059",
+            "tertiary-fixed": "#e5e2e1",
+            "error": "#ffb4ab",
+            "outline": "#9a8f80",
+            "surface-dim": "#121414",
+            "inverse-on-surface": "#2f3131",
+            "tertiary": "#c8c6c5",
+            "on-tertiary-fixed-variant": "#474746",
+            "surface-container-low": "#1a1c1c",
+            "inverse-primary": "#775a19",
+            "surface-container": "#1e2020",
+            "error-container": "#93000a",
+            "on-primary": "#412d00",
+            "surface-container-lowest": "#0d0e0f",
+            "on-secondary-fixed": "#1c1b1b",
+            "surface": "#121414",
+            "secondary-container": "#4a4949",
+            "on-error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#c8c6c5",
+            "on-tertiary-fixed": "#1c1b1b",
+            "on-surface-variant": "#d1c5b4",
+            "on-surface": "#e2e2e2",
+            "tertiary-container": "#a7a5a5",
+            "primary-fixed": "#ffdea5",
+            "surface-tint": "#e9c176",
+            "outline-variant": "#4e4639",
+            "on-secondary": "#313030",
+            "surface-container-highest": "#333535",
+            "on-tertiary": "#313030",
+            "primary": "#e9c176",
+            "on-error": "#690005",
+            "on-secondary-fixed-variant": "#474646",
+            "on-background": "#e2e2e2",
+            "inverse-surface": "#e2e2e2",
+            "on-tertiary-container": "#3b3b3b",
+            "on-primary-fixed-variant": "#5d4201",
+            "surface-variant": "#333535",
+            "surface-container-high": "#282a2b",
+            "primary-fixed-dim": "#e9c176",
+            "secondary-fixed-dim": "#c9c6c5",
+            "on-secondary-container": "#bab8b7",
+            "secondary-fixed": "#e5e2e1",
+            "on-primary-container": "#4e3700",
+            "surface-bright": "#38393a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-mobile": "20px",
+            "base": "8px",
+            "margin-desktop": "64px",
+            "gutter": "24px",
+            "container-max": "1200px"
+          },
+          "fontFamily": {
+            "body-lg": ["Manrope"],
+            "headline-md": ["Noto Serif"],
+            "label-sm": ["Manrope"],
+            "label-lg": ["Manrope"],
+            "headline-xl": ["Noto Serif"],
+            "body-md": ["Manrope"],
+            "headline-lg": ["Noto Serif"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+            "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    body {
+      background-color: #121414;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* --- Scroll Reveal --- */
+    [data-aos="fade-up"] {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .6s ease, transform .6s ease
+    }
+
+    [data-aos="fade-up"].revealed {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      [data-aos="fade-up"] {
+        opacity: 1;
+        transform: none;
+        transition: none
+      }
+    }
+  </style>
+  <title>Ubuhle Skin Glow | Luxury African Skincare</title>
+</head>
+
+<body class="font-body-md text-on-background">
+  <nav
+    class="fixed top-0 left-0 w-full flex justify-between items-center px-12 h-24 bg-black z-50 border-b border-[#C5A059]/20">
+    <a href="index.html" class="flex items-center flex-shrink-0"><img src="logo/logo-removebg-preview.png" alt="Ubuhle Skin Glow"
+        class="h-14 w-auto" loading="eager" decoding="async" width="224" height="56"></a>
+    <div class="hidden md:flex items-center gap-12">
+      <a class="font-serif text-sm tracking-widest uppercase text-[#C5A059] border-b border-[#C5A059] pb-1"
+        href="shop.html">Shop</a>
+      <a class="font-serif text-sm tracking-widest uppercase text-zinc-400 hover:text-[#C5A059] transition-colors duration-300"
+        href="about us.html">About</a>
+      <a class="font-serif text-sm tracking-widest uppercase text-zinc-400 hover:text-[#C5A059] transition-colors duration-300"
+        href="results.html">Results</a>
+      <a class="font-serif text-sm tracking-widest uppercase text-zinc-400 hover:text-[#C5A059] transition-colors duration-300"
+        href="contact.html">Contact</a>
+    </div>
+    <div class="flex items-center gap-6 text-[#C5A059]">
+      <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity"
+        data-icon="shopping_bag">shopping_bag</span>
+      <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity"
+        data-icon="person">person</span>
+    </div>
+  </nav>
+  <header class="relative h-screen w-full flex items-center justify-center overflow-hidden pt-24">
+    <div class="absolute inset-0 z-0 bg-black">
+      <img loading="lazy" decoding="async" alt="" class="w-full h-full object-cover opacity-50"
+        data-alt="Luxurious dark interior with soft golden ambient light highlighting a premium skincare bottle on a marble pedestal"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2Ro9izL0qRieK7To-HgTtMpVv64egJPKoU5K6siqEQD9eIHNivAkCr9Ji5dpSkz1bqLiEodFGUBIqTX47zYtNTRRJ-58Fv1V3DxLayYkQGVHPYL8UeBMAzL331_F1DW_vgOwuHWG7OnWeRTA7XJnYEQ-5himwujU-SBRWQdx5DgLGyCOu7f50tOE2R-DB2mdWM0KRt_CZW5cskdFe1y163BiIDnZx3-mcMDpUDMH1Tl0-Eck4_cLUgKyP5_gjNKf11k6Yl3IiWj4" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-background"></div>
+    </div>
+    <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      <span class="font-label-sm text-primary mb-6 block">PRESTIGE RADIANCE REDEFINED</span>
+      <h1 data-aos="fade-up" class="font-headline-xl text-on-surface mb-8">Unveil Your Most <br /> <span
+          class="italic font-light">Authentic Glow</span></h1>
+      <div class="flex justify-center gap-6">
+        <a data-aos="fade-up" href="shop.html"
+          class="bg-primary-container text-on-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:brightness-110 transition-all inline-block">
+          Shop Skin Care
+        </a>
+        <a data-aos="fade-up" href="about us.html"
+          class="border border-primary-container text-primary-container px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-primary-container/10 transition-all inline-block">
+          The Radiance
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-primary opacity-60">
+      <span class="text-[10px] uppercase tracking-[0.3em]">Scroll</span>
+      <div class="w-px h-12 bg-primary-container/30 relative">
+        <div class="absolute top-0 left-0 w-full h-1/3 bg-primary-container"></div>
+      </div>
+    </div>
+  </header>
+  <section class="py-[120px] px-12 max-w-[1400px] mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+      <div class="relative group">
+        <div
+          class="absolute -inset-4 border border-primary-container/20 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-700">
+        </div>
+        <img loading="lazy" decoding="async" alt=""
+          class="relative z-10 w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+          data-alt="Close-up artistic shot of clean, glowing skin with water droplets and warm golden lighting highlighting texture"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEQull-qf-Yc4lhEabx0IBBF09WT0UyMPmDbmyrdcenvao6Q9OrHI0eTrU8A6TriGdXuE9CcJCadCcZNTO8hV6uAkem9Rcs2FHJFdnhrx-B-n2grERMxVJuc4_N-zdCr5U4nbI0cwsR4U6_5AaYuO2pBjBwG-aJMFeXNUKTy9aTL3GfyErOzn51MJgBH-q2Ti4Nuw9SAloAGbF0SLdf3CtGaEdak1WnIEN9MaUZKlnoGbIkVdu7FoF8f5tY0Eq_iIHBhvtVtrn8rk" />
+      </div>
+      <div class="space-y-8">
+        <div class="space-y-4">
+          <span class="font-label-sm text-primary uppercase tracking-[0.2em]">Our Philosophy</span>
+          <h2 data-aos="fade-up" class="font-headline-lg text-on-surface leading-tight">Authentic Radiance, <br />
+            Rooted in Science.</h2>
+        </div>
+        <p data-aos="fade-up" class="font-body-lg text-zinc-400 max-w-lg">
+          Ubuhle is isizulu, xhosa and swati meaning beauty, represents our commitment to skincare that honors your
+          natural identity. We
+          blend potent botanical extracts with clinical-grade actives to create rituals that don't just treat the
+          surface, but cultivate a lasting luminosity from within.
+        </p>
+        <div class="grid grid-cols-2 gap-8 pt-8">
+          <div class="space-y-2">
+            <span class="font-headline-md text-primary block">Pure</span>
+            <span class="font-label-sm text-zinc-500 uppercase">Organic Ingredients</span>
+          </div>
+          <div class="space-y-2">
+            <span class="font-headline-md text-primary block">Tested</span>
+            <span class="font-label-sm text-zinc-500 uppercase">Clinically Proven</span>
+          </div>
+        </div>
+        <a class="inline-block font-label-lg text-primary border-b border-primary/30 pb-2 hover:border-primary transition-all"
+          href="about us.html">Explore The Science</a>
+      </div>
+    </div>
+  </section>
+  <section class="bg-surface-container-lowest py-[120px]">
+    <div class="px-12 mb-16 flex justify-between items-end">
+      <div>
+        <span class="font-label-sm text-primary uppercase tracking-[0.2em] mb-4 block">Selected for You</span>
+        <h2 data-aos="fade-up" class="font-headline-lg text-on-surface">The Collection</h2>
+      </div>
+      <div class="flex gap-4">
+        <button
+          class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
+          <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+        </button>
+        <button
+          class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
+          <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+        </button>
+      </div>
+    </div>
+    <div class="flex gap-8 overflow-x-auto no-scrollbar px-12 pb-12">
+      <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
+        <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
+          <img loading="lazy" decoding="async" alt=""
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Minimalist skincare product bottle with a dropper on a clean black surface with sharp shadows"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCJ4rqN4iPitBrKlbt6Eq5EVWtILTWgxmOcYBwWmlAHyedWEcuJp11ivup2yAFAA4G4BSjvlUZIb_q69rlYLkpAvKm_FvVf-jgG_x8ovVpsQik1zTPPA86BhDQYJ2d02d5soQUhoBh86wj-qJe36pKBTGtjnS8BiOtaOk1D0PKopXsR8dQ1pO1_sWMAGuWm0GFdCaMSi-tPAJuh0oKtUrEVjd61o2-ArMClK4TmqKUDokhckI0L--UodgjFNQw2Eyw936N8KM1Cyg" />
+          <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span
+              class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Hydrating</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3 data-aos="fade-up" class="font-headline-md text-lg mb-2 group-hover:text-primary transition-colors"><a
+              href="product_detail.html">Ubuhle Glow Serum</a></h3>
+          <p class="font-label-sm text-zinc-500 mb-4">$85.00</p>
+          <button
+            class="font-label-sm text-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Add
+            to Bag</button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
+        <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
+          <img loading="lazy" decoding="async" alt=""
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="A jar of premium skin cream open to show the smooth white texture against a dark stone background"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo27FnoVGkVugLnTLgXkoEb9XbgVn4ZrGiZLjR4MX_zgzXNkrPlHp-6_Lzvq77WAdO5ObU7OeyUxGrC_k5eCGVoDJEDpLsnkkopYSLTVMydAC8L3gVCOu22Xx_L6q-5dFeon-deaugjvLzhkwyiEIaoMmoSEfv3c66qAfX7QfYrBSdPWapquvFmWGBd2ddhXZzwtEn_MlDIQQW-Pay48y9jF1dtrAvp7Ns13E_7wPuSQPlDtZD-URZbGKsMItUCN2fXYyQIfZ0554" />
+          <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span
+              class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Firming</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3 data-aos="fade-up" class="font-headline-md text-lg mb-2 group-hover:text-primary transition-colors"><a
+              href="product_detail.html">Ubuhle Glow Face Creams</a></h3>
+          <p class="font-label-sm text-zinc-500 mb-4">$120.00</p>
+          <button
+            class="font-label-sm text-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Add
+            to Bag</button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
+        <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
+          <img loading="lazy" decoding="async" alt=""
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Luxury facial oil in a gold-capped glass bottle surrounded by organic ingredients and soft lighting"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiImvE3WtVf7uolvrqjOZaioX5J-z1WhJmDoP-gSUtcqsg3_eDuK-J9Z0Nwm0CfVh1WIBX5C4QANLSjqpTegL_EgUq4_JVlj7NyJNRYFaW6PYCha2OWpqDyD7qHpoIlXj4oNX_VhXYbUvMYXHOXVvJ-Y4XmVMUWHAmYfPHdjBFKyMrCEPVDN_oYl2tAcEd8pNLamtIovMFVkrtqZ5Hzw1sZPTSn_3aL5Jbkn_VBS5ePHSOjBxpADVUen0Nu-IiebJGT9TJt5uAv_U" />
+          <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span
+              class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Nourishing</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3 data-aos="fade-up" class="font-headline-md text-lg mb-2 group-hover:text-primary transition-colors"><a
+              href="product_detail.html">Ubuhle Glow Face Oil</a></h3>
+          <p class="font-label-sm text-zinc-500 mb-4">$95.00</p>
+          <button
+            class="font-label-sm text-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Add
+            to Bag</button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
+        <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
+          <img loading="lazy" decoding="async" alt=""
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Modern facial cleanser bottle standing in a minimal marble setting with elegant water ripples"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqi7JEborV1QRx7BqyMJRLHeENpb8K4RqS5L7dWmd0MuoIHXy8wIvcPN3lMlV3EY1RMLH_n1FLd5S4-zfcDmkqFvcc2ZxAscNhsN5gVLAnm59zZtBQ-TRwbD9-qgkTMtL-Zv8USUgW3vmA2XP89NSuMsIrvCSJ0a3i4ioYoWTRYLeAMxsUxdehwt5IeUkAZ5LcZFgTOEVGhjEZsoUzKOPp9G0rPr5s-PHM9QZuWhOCKrKyoysfUfp9ZtGjLMLyl-YNpJGYnQ7dbN0" />
+          <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span
+              class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Anti-Aging</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3 data-aos="fade-up" class="font-headline-md text-lg mb-2 group-hover:text-primary transition-colors"><a
+              href="product_detail.html">Ubuhle Glow Toner for Anti Aging</a></h3>
+          <p class="font-label-sm text-zinc-500 mb-4">$55.00</p>
+          <button
+            class="font-label-sm text-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Add
+            to Bag</button>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
+        <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
+          <img loading="lazy" decoding="async" alt=""
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            data-alt="Luxury body cream in elegant packaging"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCOH2JKSliRQXArAltKXMZGweG6IdZTk6Y-Ru6VMVez4U2ZjTi-h1aOAK6jnoCGkv1tlGB7AnYmbso_3N_EvaHBToIFPirqoY2-rVwO0_srRJwNTZ69RA3AzXxJwcxi2sR1N1qfZa6sQnuKcBHuQX-6W2jgc90cpTMPudPARIGhwDivW9Q-OVOcN8OMoCYyW6K0huAdE7XXFL1e8TWSjNhXNah7i-Ylv47x8jrM8xFh40VjfsRG_ixREtDMAIdQ2Ovjfd8Jw92Yio" />
+          <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span
+              class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Smoothing</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3 data-aos="fade-up" class="font-headline-md text-lg mb-2 group-hover:text-primary transition-colors"><a
+              href="product_detail.html">Ubuhle Glow Body Creams</a></h3>
+          <p class="font-label-sm text-zinc-500 mb-4">$80.00</p>
+          <button
+            class="font-label-sm text-primary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">Add
+            to Bag</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-[120px] px-12 bg-background border-y border-zinc-900">
+    <div class="max-w-4xl mx-auto text-center space-y-12">
+      <span class="material-symbols-outlined text-primary text-4xl" data-icon="star">star</span>
+      <p class="font-headline-lg text-on-surface leading-relaxed italic">
+        "My skin has never felt so alive. The Glow Serum is a revelation—a true luxury ritual that yields undeniable
+        results."
+      </p>
+      <div class="space-y-1">
+        <span class="font-label-lg text-primary uppercase tracking-widest">Elena V.</span>
+        <span class="font-label-sm text-zinc-500 uppercase tracking-widest">Verified Client</span>
+      </div>
+    </div>
+  </section>
+  <section class="py-[120px] px-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div data-aos="fade-up" class="h-[400px] bg-zinc-900 relative overflow-hidden group">
+        <img loading="lazy" decoding="async" alt=""
+          class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
+          data-alt="Abstract macro shot of golden botanical oil swirling in water, representing purity and ingredients"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1CjWvstwGSyCmCc42TnEz0U_AkDWbBJMbqVCCKvJfjoMRV-Oeo964OhYovvR43iUgN8uUP3SSDTE99QUTk2Pj2RkowLiB49yAMXru3THWKjdPlOxmR-JwGp9TZaFBODB6RB3Kv3qSOLWDCY-AXcPHz6gZZermVPfwOM8EkzN8D8bJzPpml5mmMTQjBBACsqUnZm9GB7DCMgJ73qqhNXYgKAghN4kt3u34u4ZNt_tsJjM6TLWUuPmgO4bREtCwbFAXaRrEaFOcKuE" />
+        <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+          <h4 class="font-headline-md text-xl mb-2">Our Ingredients</h4>
+          <p data-aos="fade-up" class="font-body-md text-zinc-400 mb-4">Discover the rare botanicals curated for your
+            skin.</p>
+          <a class="font-label-sm text-primary flex items-center gap-2 group/link" href="#">
+            Learn More
+            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+              data-icon="arrow_forward">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="h-[400px] bg-zinc-900 relative overflow-hidden group">
+        <img loading="lazy" decoding="async" alt=""
+          class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
+          data-alt="Soft morning light shining through an elegant bathroom window, highlighting glass skincare bottles"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8IHds4V2JpOzGopmQijgFQ7FaDbIileoloFCsxbIPSq3k2b8VTY1yf_M0R5w9SgQypo8HfVDo6qKZf6rP_2tgTQg43Sg5Ezwe2f6wBNspmrf_zT0x8mbTH9oJSGcxBc7RGM_l57SU7pyI6xAwXH-7HEVDEsBsZDwpuAET5n72G-cGtoZCr66ELyRWpqqa6cYi6gK49Wo65T9lafNI3cG_ZZrTDOUmMpoiLXgwrjoSasSSxjelFu1E1oBGBe6-JL8SX79TL5VcDaA" />
+        <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+          <h4 class="font-headline-md text-xl mb-2">The Glow Journal</h4>
+          <p data-aos="fade-up" class="font-body-md text-zinc-400 mb-4">Expert tips on maintaining a sustainable,
+            radiant complexion.</p>
+          <a class="font-label-sm text-primary flex items-center gap-2 group/link" href="#">
+            Read Articles
+            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+              data-icon="arrow_forward">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="h-[400px] bg-zinc-900 relative overflow-hidden group">
+        <img loading="lazy" decoding="async" alt=""
+          class="w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-1000"
+          data-alt="Beautifully packaged luxury skincare gift set on a velvet cloth under warm spotlight"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuANvvHUdbMuTKl11BhDH7Wo4k1yMM2g79tolc7DK18JDH25_I6TpODUZrPUoxUUtzEDTLUKiwjORCNuedyWpW1Noe0jTKlX1QQLEYjhOsqFhMwfreSDaJ2HvwXZJbg4-IRPKlR_8hTlmq1YZqim__ekimiMDepTm9D2phm61TjOkCvaAWWpxSAlI-sjdEZrG_NqCeD_KX_mi8Tq7lrtDY-YfRewpqq3foH_vyflrLp3sdYoDs4XyLMNqChrSrg9iGINAvoj3zUX80Y" />
+        <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black/80 to-transparent">
+          <h4 class="font-headline-md text-xl mb-2">Exclusive Sets</h4>
+          <p data-aos="fade-up" class="font-body-md text-zinc-400 mb-4">Curated collections for every unique skin
+            concern.</p>
+          <a class="font-label-sm text-primary flex items-center gap-2 group/link" href="#">
+            Shop Bundles
+            <span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+              data-icon="arrow_forward">arrow_forward</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    class="w-full py-20 px-12 flex flex-col md:flex-row justify-between items-start gap-8 mt-[120px] bg-zinc-950 border-t border-zinc-900">
+    <div class="max-w-xs">
+      <div class="text-[#C5A059] font-serif text-lg tracking-widest mb-4">UBUHLE SKIN GLOW</div>
+      <p class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 mb-6">Redefining the standard of luxury
+        skincare through scientific excellence and organic purity.</p>
+      <div class="flex gap-4 text-zinc-400">
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors"
+          data-icon="public">public</span>
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors"
+          data-icon="share">share</span>
+        <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors"
+          data-icon="mail">mail</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+      <div class="space-y-4">
+        <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Navigate</span>
+        <ul class="space-y-3 font-sans text-[10px] tracking-widest uppercase">
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="shop.html">Shop All</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="about us.html">About Us</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Science</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Philosophy</a></li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Support</span>
+        <ul
+          class="space-y-3 font-sans text-[10px] tracking-widest uppercase text-zinc-500 hover:text-white transition-colors">
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Privacy Policy</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">Terms of Service</a></li>
+          <li><a class="text-zinc-500 hover:text-white transition-colors" href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="hidden md:block space-y-4">
+        <span class="font-sans text-[10px] tracking-widest uppercase text-zinc-500 block mb-6">Contact</span>
+        <ul class="space-y-3 font-sans text-[10px] tracking-widest uppercase">
+          <li class="text-zinc-500">concierge@ubuhleskin.com</li>
+          <li class="text-zinc-500">+1 (800) UBUHLE</li>
+        </ul>
+      </div>
+    </div>
+    <div class="w-full md:w-auto self-end text-right">
+      <div class="font-sans text-[10px] tracking-widest uppercase text-zinc-500">
+        © 2024 UBUHLE SKIN GLOW. ALL RIGHTS RESERVED.
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
