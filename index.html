@@ -247,24 +247,24 @@
         <h2 data-aos="fade-up" class="font-headline-lg text-on-surface">The Collection</h2>
       </div>
       <div class="flex gap-4">
-        <button
+        <button id="scroll-left"
           class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
           <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
         </button>
-        <button
+        <button id="scroll-right"
           class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-all">
           <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
         </button>
       </div>
     </div>
-    <div class="flex gap-8 overflow-x-auto no-scrollbar px-12 pb-12">
+    <div id="product-collection" class="flex gap-8 overflow-x-auto no-scrollbar px-12 pb-12 scroll-smooth">
       <!-- Product 1 -->
       <div data-aos="fade-up" class="min-w-[320px] group cursor-pointer">
         <div data-aos="fade-up" class="aspect-[3/4] bg-surface-container mb-6 overflow-hidden relative">
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="luxury frosted glass serum bottle"
-            src="products/product1.jpeg" />
+            src="products/product7.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Hydrating</span>
@@ -285,7 +285,7 @@
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="minimalist white cream jar"
-            src="products/product2.jpeg" />
+            src="products/product3.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Firming</span>
@@ -306,7 +306,7 @@
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="amber glass bottle"
-            src="products/product3.jpeg" />
+            src="products/product4.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Nourishing</span>
@@ -327,7 +327,7 @@
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="pipette dripping transparent serum"
-            src="products/product4.jpeg" />
+            src="products/product2.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Anti-Aging</span>
@@ -348,7 +348,7 @@
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="skincare bottles arranged artistically"
-            src="products/product5.jpeg" />
+            src="products/product1.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Smoothing</span>
@@ -369,7 +369,7 @@
           <img loading="lazy" decoding="async" alt=""
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             data-alt="skincare bottles arranged artistically"
-            src="products/product6.jpeg" />
+            src="products/product5.jpeg" />
           <div class="absolute bottom-4 left-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <span
               class="bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-[10px] uppercase tracking-widest border border-primary/20">Smoothing</span>
@@ -509,6 +509,23 @@
     });
   </script>
   <script src="cart.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const collection = document.getElementById("product-collection");
+      const leftBtn = document.getElementById("scroll-left");
+      const rightBtn = document.getElementById("scroll-right");
+      
+      if (leftBtn && rightBtn && collection) {
+        leftBtn.addEventListener("click", () => {
+          collection.scrollBy({ left: -350, behavior: 'smooth' });
+        });
+        
+        rightBtn.addEventListener("click", () => {
+          collection.scrollBy({ left: 350, behavior: 'smooth' });
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

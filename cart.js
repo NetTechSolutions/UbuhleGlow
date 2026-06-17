@@ -146,13 +146,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     checkoutBtn.addEventListener('click', () => {
         if (cart.length === 0) return;
-        let text = "Hi, I would like to place an order for the following items:\\n\\n";
+        let text = "Hi, I would like to place an order for the following items:\n\n";
         let total = 0;
         cart.forEach(item => {
-            text += `- ${item.name} (x${item.quantity}): ${formatPrice(item.price * item.quantity)}\\n`;
+            text += `- ${item.name} (x${item.quantity}): ${formatPrice(item.price * item.quantity)}\n`;
             total += item.price * item.quantity;
         });
-        text += `\\nTotal: ${formatPrice(total)}\\n\\nPlease assist me with the checkout process.`;
+        text += `\nTotal: ${formatPrice(total)}\n\nPlease assist me with the checkout process.`;
         
         const phone = "27611103073";
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
